@@ -109,7 +109,6 @@ python tune_hyperparameters.py --n_trials 40 --pruner hyperband --report_every 1
 - [Experimental results](docs/results.md)
 - [Data requirements](docs/data.md)
 - [Reproduction and data constraints](docs/reproducibility.md)
-- [Project presentation (PowerPoint)](docs/manhattan-od-estimation-presentation.pptx)
 
 ## Scope and limitations
 
