@@ -1,0 +1,72 @@
+
+# Manhattan OD Matrix Estimation — MLP
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local datasets and generated matrices
+data/
+datasets/
+*.csv
+*.parquet
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Trained models and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+checkpoints/
+models/
+
+# Generated experiment outputs
+runs/
+logs/
+wandb/
+tensorboard/
+results/*.csv
+results/*.json
+
+# Environment variables and secrets
+.env
+.env.*
+secrets.json
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep project source and documentation
+# pipeline/
+# assets/figures/
+# docs/
+# README.md
+# CONTRIBUTORS.md
+# requirements.txt
