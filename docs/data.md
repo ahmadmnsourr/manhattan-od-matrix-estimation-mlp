@@ -1,8 +1,8 @@
 # Data and input formats
 
-The uploaded code archive did **not** contain the underlying Manhattan CityFlow network files, traffic demand JSON, preprocessed OD matrices, trained model weights, or training results. These materials are therefore not claimed as downloadable from this repository.
+The repository does **not** include the Manhattan CityFlow network files, traffic demand JSON, preprocessed OD matrices, trained model weights, or saved training runs. The code and documentation are available, but running the pipeline requires obtaining the corresponding input data.
 
-The scripts expect the original CityFlow-style road network and demand scenarios described in the accompanying technical manuscript. The study's data are attributed there to Chen et al.; dataset reuse is subject to its source terms. No substitute data are silently provided as though they were the evaluated dataset.
+The scripts expect CityFlow-style Manhattan network geometry and synthetic traffic-demand scenarios. The scenario data were derived from external transportation simulation resources; their redistribution permissions must be assessed separately. No substitute files are presented as the original evaluation data.
 
 ## File layout used by the existing scripts
 

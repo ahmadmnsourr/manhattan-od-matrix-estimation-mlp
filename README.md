@@ -21,9 +21,9 @@ This study addresses the inverse problem by aggregating network-link traffic cou
 - **Automated tuning:** Optuna TPE sampling and Hyperband pruning over architectural, optimization, and loss settings.
 - **Robustness evaluation:** experiments with progressively reduced availability of underlying link-flow observations.
 
-## Reported performance
+## Experimental performance
 
-![Reported sMAPE before and after hyperparameter optimization](assets/figures/smape-tuning.png)
+![sMAPE before and after hyperparameter optimization](assets/figures/smape-tuning.png)
 
 | Evaluation metric | Before tuning | After tuning |
 |---|---:|---:|
@@ -33,7 +33,7 @@ This study addresses the inverse problem by aggregating network-link traffic cou
 | Test total-flow error | 3.95% | 1.70% |
 | Test MAE | 2.89 | 3.04 |
 
-Values are transcribed from the accompanying April 2026 manuscript; the original training datasets and model checkpoints are **not** included in this archive, so these are **reported findings, not newly reproduced benchmark results**. [Results and interpretation](docs/results.md)
+These values summarize the original project experiments. The training datasets and model checkpoints are **not** included in this repository, so the figures have **not been independently reproduced from the packaged code**. [Results and interpretation](docs/results.md)
 
 ## Missing-data sensitivity
 
@@ -54,7 +54,7 @@ flowchart LR
   H[Link-count masking] --> D
 ```
 
-A network zoning figure used in the original study:
+Manhattan network zoning used in the modeling workflow:
 
 ![Manhattan traffic-analysis zoning](assets/figures/manhattan-zoning.png)
 
@@ -74,8 +74,8 @@ manhattan-od-matrix-estimation-mlp/
 │   ├── train_od_mlp.py
 │   ├── train_od_mlp_variant.py
 │   └── tune_hyperparameters.py
-├── assets/figures/                 # Visuals from study + reported-metric charts
-├── docs/                           # Research methodology, data, results, source materials
+├── assets/figures/                 # Zoning, tuning and robustness figures
+├── docs/                           # Methodology, data, results and reproduction notes
 ├── results/                        # Local outputs (gitignored)
 ├── requirements.txt
 ├── CONTRIBUTORS.md
@@ -103,16 +103,16 @@ An Optuna search may be started after assembling the data:
 python tune_hyperparameters.py --n_trials 40 --pruner hyperband --report_every 10
 ```
 
-## Study documents
+## Project documentation
 
-- [Technical manuscript (PDF)](docs/manhattan-od-estimation-manuscript.pdf)
-- [Research presentation (PowerPoint)](docs/manhattan-od-estimation-presentation.pptx)
-- [Study design](docs/methodology.md)
-- [Reported results](docs/results.md)
+- [Methodology](docs/methodology.md)
+- [Experimental results](docs/results.md)
+- [Data requirements](docs/data.md)
 - [Reproduction and data constraints](docs/reproducibility.md)
+- [Project presentation (PowerPoint)](docs/manhattan-od-estimation-presentation.pptx)
 
 ## Scope and limitations
 
-Results are based on **synthetic traffic from four one-hour scenarios** on a fixed 20-zone Manhattan network. The input networks and original training artifacts were not present in the provided source archive, and reproducibility of the reported values has not been independently verified here. Transfer to measured detector data or other networks remains outside the evaluated scope.
+Results are based on **synthetic traffic from four one-hour scenarios** on a fixed 20-zone Manhattan network. The input networks and original training artifacts were not present in the provided source archive, and the original experimental values have not been independently reproduced from this archive. Transfer to measured detector data or other networks remains outside the evaluated scope.
 
-The source code and manuscript are joint academic work. Redistribution or reuse is not assigned an open-source license in this repository; the traffic dataset and software dependencies remain subject to their respective terms.
+The source code is joint academic work by the credited contributors. No open-source license is assigned here; third-party traffic data and software dependencies remain subject to their respective terms.

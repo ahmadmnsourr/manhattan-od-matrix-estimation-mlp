@@ -1,6 +1,6 @@
 # Experimental results
 
-All values below are **reported results** from the accompanying April 2026 technical manuscript, not from a fresh rerun of the source repository.
+The tables below record results obtained during the original project experiments. They are included to document the model evaluation; these numbers have **not been independently reproduced using the packaged repository**, because the underlying datasets and saved checkpoints are not included.
 
 ## Hyperparameter-optimization comparison
 
@@ -34,7 +34,7 @@ Tuning improved **test sMAPE by 5.49 percentage points** (21.56% → 16.07%) and
 
 ![Robustness trend](../assets/figures/missing-data-sensitivity.png)
 
-The masking experiments were evaluated separately from the headline tuning comparison; their **100% observation result (24.23%) is not the same baseline as the tuned-model test sMAPE (16.07%)**. Reported numbers should be compared within, not across, the two experimental setups.
+The masking experiments were evaluated separately from the headline tuning comparison; their **100% observation result (24.23%) is not the same baseline as the tuned-model test sMAPE (16.07%)**. Values should be compared within, not across, the two experimental setups.
 
 ## Scope of the evidence
 

@@ -47,4 +47,4 @@ python aggregate_zonal_counts_masked.py --help
 python train_od_mlp.py --K 20 --counts_glob 'Refined Data/Traffic counts_zones_deletion/manhattan_*_traffic-counts-zone-*.csv'
 ```
 
-The exact mask percentage, seed, dataset state, and training configuration must be aligned to compare trials. The observed metrics in the manuscript have **not** been replicated with the packaged files.
+The exact mask percentage, seed, dataset state, and training configuration must be aligned to compare trials. The original experimental metrics have **not** been independently replicated with the packaged files.
