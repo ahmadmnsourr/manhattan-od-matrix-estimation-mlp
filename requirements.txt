@@ -1,0 +1,11 @@
+# This project needs Python 3.10–3.12 for PyTorch (torch). Do not use python3.14 for the venv.
+
+numpy<2
+pandas
+scikit-learn
+torch
+openpyxl
+networkx
+joblib
+matplotlib
+optuna
